@@ -1,6 +1,12 @@
 {
   "db": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "restaurant",
+    "password": "123456",
     "name": "db",
-    "connector": "memory"
+    "user": "postgres",
+    "connector": "postgresql"
   }
 }

@@ -1,3 +1,7 @@
 {
-  "extends": "loopback"
+  "extends": "loopback",
+  "rules": {
+    "eslint-disable comma-dangle": true,
+    "eslint-disable-next-line strict": true
+  }
 }

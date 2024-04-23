@@ -35,7 +35,19 @@
     "dataSource": "db",
     "public": false
   },
-  "Dish": {
+  "Customer": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Item": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ItemOrder": {
     "dataSource": "db",
     "public": true
   }

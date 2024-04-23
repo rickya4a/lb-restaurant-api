@@ -1,5 +1,5 @@
 {
-  "name": "Dish",
+  "name": "Item",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,11 +12,17 @@
     },
     "price": {
       "type": "number",
-      "default": 0
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "orders": {
+      "type": "hasAndBelongsToMany",
+      "model": "Order",
+      "throughTable": "ItemOrder"
+    }
+  },
   "acls": [],
   "methods": {}
 }

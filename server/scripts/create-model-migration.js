@@ -28,4 +28,17 @@ ds.automigrate(models, function(err, result) {
 
     console.log('Models created: \n', res);
   });
+  server.models.Customer.create([
+    {
+      fullName: "Admin Test",
+      email: "admin@local.host",
+      username: "admin_local",
+      password: "123456",
+      emailVerified: true
+    }
+  ], function(err, res) {
+    if (err) throw err;
+
+    console.log('Models created: \n', res);
+  });
 });

@@ -5,7 +5,16 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "itemId": {
+      "type": "number",
+      "required": true
+    },
+    "orderId": {
+      "type": "number",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
